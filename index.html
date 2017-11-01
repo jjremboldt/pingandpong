@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <script src="js/jquery-3.2.1.js"></script>
+      <script src="js/scripts.js"></script>
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <link rel="icon" type="img/jpg" sizes="32x32" href="img/pingpongicon.jpg">
+      <title>Ping Pong Game</title>
+    </head>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <img src="img/ping-pong.jpg" id="main-pic" alt="">
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" id="left-main">
+          <h3 id="left-h3">About Ping Pong</h3>
+            <h4 id="left-h4">Created by:</h4>
+              <p id="left-p">John Remboldt</p>
+            <h4 id="left-h4">GitHub</h4>
+              <p id="left-p">jjremboldt/ping.pong</p>
+            <h4 id="left-h4">Level 2 Test for:</h4>
+              <p id="left-p">JavaScript</p>
+        </div>
+          <div class="col-md-9">
+        <h1>Play "Math" Ping-Pong</h1>
+        <p>Play by entering any number the game instantly calculates:</p>
+          <ol>
+            <li>Numbers that are "divisible by 3" show a "ping".</li>
+            <li>Numbers that are "divisible by 5" show a "pong".</li>
+            <li>Numbers that are "divisible by 3 and 5" get a "ping-pong".</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" id="form-row">
+      <form id="yourNumber">
+        <div class="form-group">
+          <label for="yourNumber">Enter Your Number to Play</label>
+          <input type="text" class="form-control" id="yourNumber" name="form-cell" size="20" placeholder="your number goes here">
+          <button type="submit" value="Submit" class="btn btn-sucess btn-md">Play!</button>
+          <button type="submit" value="Submit" class="btn btn-sucess btn-md" id="again">Play Again!</button>
+        </div>
+      </form>
+      <div class="results">
+        <ul id="list">
+        </ul>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
