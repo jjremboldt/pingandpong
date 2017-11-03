@@ -6,7 +6,7 @@ $(document).ready(function() {
     event.preventDefault();
   $("ul#list").empty();
 
-    var input = parseInt($("input#yourNumber").val());
+    var input = $("input#yourNumber").val();
     var result = pingPong(input);
     result.forEach(function(result) {
       $("ul#list").append("<li>" + result + "</li>");
@@ -18,7 +18,7 @@ $(document).ready(function() {
 var pingPong = function(input) {
   var resultPongs = [];
   for (var index = 1; index <= input; index++) {
-    if (index % 15 === 0) {
+      if (index % 5 === 0 && index % 3 ===0) {
       resultPongs.push("pingpong");
     } else if (index % 5 === 0) {
       resultPongs.push("pong");
@@ -30,7 +30,5 @@ var pingPong = function(input) {
   }
   return resultPongs;
 
-  (function() {
-    location.reload();
-  });
+
 };
