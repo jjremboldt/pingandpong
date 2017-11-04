@@ -1,12 +1,51 @@
+#title-pic {
+  margin: auto;
+}
+
 #left-main {
-  color: black;
+  background-color: #a9abad;
+  height: 300px;
+  margin-right: 10px;
+  margin-top: 25px;border-radius: 25px;
+  border: 1px solid black;
+}
+
+#right-main {
+  background-color: #dee1e5;
+  height: 300px;
+  margin-top: 25px;
+  width: 500px;
+  border-radius: 25px;
+  border: 1px solid black;
 }
 
 #form-row {
   margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 700px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+  border: 1px solid black;
 }
 
-input {
-   width: 375px;
-   height: 25px;
- }
+#list {
+  overflow: auto;
+}
+
+h3 {
+  padding-bottom: 25px;
+}
+
+#yourNumber {
+  padding: 10px 10px 10px 10px;
+}
+
+#enterText {
+  padding: 10px 10px 10px 10px;
+}
+
+#button-style {
+  margin-top: 10px;
+}

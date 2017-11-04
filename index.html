@@ -12,14 +12,15 @@
     </head>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="title-pic">
       <div class="row">
-        <img src="img/ping-pong.jpg" id="main-pic" alt="">
+        <img src="img/ping-pong.jpg" alt="table">
       </div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-3" id="left-main">
-          <h3 id="left-h3">About Ping Pong</h3>
+          <h3 id="left-h3"><span class="glyphicon glyphicon-cog"></span>  About Ping Pong</h3>
             <h4 id="left-h4">Created by:</h4>
               <p id="left-p">John Remboldt</p>
             <h4 id="left-h4">GitHub</h4>
@@ -27,31 +28,37 @@
             <h4 id="left-h4">Level 2 Test for:</h4>
               <p id="left-p">JavaScript</p>
         </div>
-          <div class="col-md-9">
-        <h1>Play "Math" Ping-Pong</h1>
-        <p>Play by entering any number the game instantly calculates:</p>
-          <ol>
-            <li>Numbers that are "divisible by 3" show a "ping".</li>
-            <li>Numbers that are "divisible by 5" show a "pong".</li>
-            <li>Numbers that are "divisible by 3 and 5" get a "ping-pong".</li>
-          </ol>
-        </div>
+          <div class="col-md-9" id="right-main">
+            <h3><span class="glyphicon glyphicon-flash"></span>  Play "Math" Ping-Pong</h3>
+              <h4>Enter any number and the game instantly calculates:</h4>
+                <ol>
+                  <li>Numbers that are "divisible by 3" show a "ping".</li>
+                  <li>Numbers that are "divisible by 5" show a "pong".</li>
+                  <li>Numbers that are "divisible by 15" get a "ping-pong".</li>
+                </ol>
+          </div>
       </div>
     </div>
     <div class="container">
       <div class="row" id="form-row">
       <form id="yourNumber">
         <div class="form-group">
-          <label for="yourNumber">Enter Your Number to Play</label>
+          <label id="enterText" for="yourNumber">Enter Your Number to Play</label>
           <input type="text" class="form-control" id="yourNumber" name="form-cell" size="20" placeholder="your number goes here">
-          <button type="submit" value="Submit" class="btn btn-sucess btn-md">Play!</button>
+          <button id="button-style" type="submit" value="Submit" class="btn btn-sucess btn-md">
+            <span class="glyphicon glyphicon-play"></span>  Play!</button>
           <!-- <button id="again" type="submit" class="btn btn-info">Try Again!</button> -->
         </div>
       </form>
-      <div class="results">
-        <ul id="list">
-        </ul>
-      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="results">
+            <ul id="list">
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6"></div>
     </div>
   </div>
   </body>
