@@ -10,10 +10,6 @@ $(document).ready(function() {
     var result = pingPong(input);
     result.forEach(function(result) {
       $("ul#list").append("<li>" + result + "</li>");
-      $("#button-again").click(function() {
-        location.reload();
-
-      });
     });
   });
 });
@@ -21,17 +17,23 @@ $(document).ready(function() {
 // Backend logic
 var pingPong = function(input) {
   var resultPongs = [];
+  var resultPings = [];
+  var resultPingPongs = [];
+
   for (var index = 1; index <= input; index++) {
       if (index % 15 === 0) {
-      resultPongs.push("pingpong");
+      resultPongs.push("pingpongs");
     } else if (index % 5 === 0) {
-      resultPongs.push("pong");
+      resultPongs.push("pongs");
     } else if (index % 3 === 0) {
-      resultPongs.push("ping");
+      resultPongs.push("pings");
     } else {
       resultPongs.push(index);
     }
   }
-  $("#results-container").show();
   return resultPongs;
+  return resultPings;
+  return resultPingPongs;
+
+
 };

@@ -1,17 +1,22 @@
 #title-pic {
   margin: auto;
+  float: none;
+  width: 825px;
 }
-
+#info-main {
+  margin: auto;
+  float: none;
+  width: 825px;
+}
 #left-main {
-  background-color: #a9abad;
   height: 300px;
+  width: 300px;
   margin-right: 10px;
   margin-top: 25px;border-radius: 25px;
   border: 1px solid black;
 }
 
 #right-main {
-  background-color: #dee1e5;
   height: 300px;
   margin-top: 25px;
   width: 500px;
@@ -19,33 +24,31 @@
   border: 1px solid black;
 }
 
+#form-container {
+  margin: auto;
+  float: none;
+  width: 825px;
+}
+
 #form-row {
-  margin-top: 50px;
-  margin-left: 30px;
-  margin-right: 30px;
-  width: 700px;
+  margin-top: 25px;
+  width: 810px;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 25px;
   border: 1px solid black;
 }
 
-#list {
-  overflow: auto;
+#results-container {
+  margin: auto;
+  float: none;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 825px;
+  display: none;
 }
 
-h3 {
-  padding-bottom: 25px;
-}
 
-#yourNumber {
-  padding: 10px 10px 10px 10px;
-}
-
-#enterText {
-  padding: 10px 10px 10px 10px;
-}
-
-#button-style {
-  margin-top: 10px;
+.button-row {
+  padding-top: 25px;
 }

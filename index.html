@@ -14,10 +14,10 @@
   <body>
     <div class="container" id="title-pic">
       <div class="row">
-        <img src="img/ping-pong.jpg" alt="table">
+        <img src="img/ping-pongrnd.jpg" alt="table">
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="info-main">
       <div class="row">
         <div class="col-md-3" id="left-main">
           <h3 id="left-h3"><span class="glyphicon glyphicon-cog"></span>  About Ping Pong</h3>
@@ -39,26 +39,30 @@
           </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="form-container">
       <div class="row" id="form-row">
       <form id="yourNumber">
         <div class="form-group">
-          <label id="enterText" for="yourNumber">Enter Your Number to Play</label>
-          <input type="text" class="form-control" id="yourNumber" name="form-cell" size="20" placeholder="your number goes here">
-          <button id="button-style" type="submit" value="Submit" class="btn btn-sucess btn-md">
-            <span class="glyphicon glyphicon-play"></span>  Play!</button>
-          <!-- <button id="again" type="submit" class="btn btn-info">Try Again!</button> -->
-        </div>
+          <h4>Enter a Number to Play</h4>
+          <input type="text" class="form-control" id="yourNumber" name="form-cell" size="10" placeholder="your number goes here">
+            <div class="button-row">
+              <button id="button-play" type="submit" class="btn btn-info"><span class="glyphicon glyphicon-play"></span>  Play!</button>
+              <button id="button-again" type="submit" class="btn btn-info"><span class="glyphicon glyphicon-repeat"></span> Try Again!</button>
+            </div>
+        </div>  <!-- closes from-group -->
       </form>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
+    </div> <!-- closes form-row -->
+  </div>
+    <div class="container" id="results-container">
+      <div class="row" id="row-results">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
           <div class="results">
             <ul id="list">
             </ul>
           </div>
         </div>
-        <div class="col-md-6"></div>
+        <div class="col-md-4"></div>
     </div>
   </div>
   </body>
