@@ -1,5 +1,6 @@
 #title-pic {
   margin: auto;
+  margin-top: 25px;
   float: none;
   width: 825px;
 }
@@ -16,6 +17,15 @@
   border: 1px solid black;
 }
 
+#aboutList {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+#aboutItem {
+  padding-left: 10px;
+}
+
 #right-main {
   height: 300px;
   margin-top: 25px;
@@ -23,6 +33,35 @@
   border-radius: 25px;
   border: 1px solid black;
 }
+
+#keyHeading {
+  margin-top: 20px;
+}
+#keyTitle {
+  margin-top: 15px;
+}
+#key {
+  font-style: italic;
+}
+
+#GitLink {
+  width: auto;
+  padding: 1px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 12px;
+  background: #e8ebef;
+  color: #0c0000;
+
+  border-radius: 5px;
+  }
+
+#GitLink:hover {
+color: #0c0000;
+background: #c2edc3;
+border: 1px solid #c2edc3;
+}
+
 
 #form-container {
   margin: auto;
@@ -41,6 +80,7 @@
 
 #results-container {
   margin: auto;
+  margin-top: 25px;
   float: none;
   border: 1px solid black;
   border-radius: 25px;

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-      <script src="js/jquery-3.2.1.js"></script>
-      <script src="js/scripts.js"></script>
-      <link href="css/styles.css" rel="stylesheet" type="text/css">
-      <link rel="icon" type="img/jpg" sizes="32x32" href="img/pingpongicon.jpg">
-      <title>Ping Pong Game</title>
-    </head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="img/jpg" sizes="32x32" href="img/pingpongicon.jpg">
+    <title>Ping Pong Game</title>
   </head>
   <body>
     <div class="container" id="title-pic">
@@ -20,21 +18,23 @@
     <div class="container" id="info-main">
       <div class="row">
         <div class="col-md-3" id="left-main">
-          <h3 id="left-h3"><span class="glyphicon glyphicon-cog"></span>  About Ping Pong</h3>
-            <h4 id="left-h4">Created by:</h4>
-              <p id="left-p">John Remboldt</p>
-            <h4 id="left-h4">GitHub</h4>
-              <p id="left-p"><a href="https://www.w3schools.com/" target="_blank"></a></p>
-            <h4 id="left-h4">Level 2 Test for:</h4>
-              <p id="left-p">JavaScript</p>
+          <h3><span class="glyphicon glyphicon-cog"></span>  About Ping Pong</h3>
+            <div class="row" id="aboutList">
+            <h4>Created by:</h4>
+              <p id="aboutItem">John Remboldt</p>
+            <h4 >GitHub Link</h4>
+                <p id="aboutItem"><input id="GitLink" target="_blank" class="GitButton" type="button" value="Click to view on GitHub" onclick="window.location.href='https://github.com/jjremboldt/pingandpong'"></p>
+            <h4>Level 2 Test for:</h4>
+              <p id="aboutItem">JavaScript</p>
+            </div>
         </div>
           <div class="col-md-9" id="right-main">
             <h3><span class="glyphicon glyphicon-flash"></span>  Play "Math" Ping-Pong</h3>
-              <h4>Enter any number and the game instantly calculates:</h4>
-                <ol>
-                  <li>Numbers that are "divisible by 3" show a "ping".</li>
-                  <li>Numbers that are "divisible by 5" show a "pong".</li>
-                  <li>Numbers that are "divisible by 15" get a "ping-pong".</li>
+              <h4 id="keyHeading">Enter any number and the game instantly calculates:</h4>
+                <ol id="keyTitle">
+                  <li id="key">Numbers that are "divisible by 3" show a "ping".</li>
+                  <li id="key">Numbers that are "divisible by 5" show a "pong".</li>
+                  <li id="key">Numbers that are "divisible by 15" get a "ping-pong".</li>
                 </ol>
           </div>
       </div>
